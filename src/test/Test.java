@@ -14,6 +14,10 @@ public class Test {
 		
 		System.out.print("Unsorted: ");
 		printArray(a);
+		
+		Arrays.sort(a);
+		System.out.print("Sorted: ");
+		printArray(a);
 	}
 
 	public static int generateLength() {
