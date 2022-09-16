@@ -19,7 +19,7 @@ public class Test {
 		System.out.print("Sorted: ");
 		printArray(a);
 		
-		System.out.print("Variance: " + Math.round(sd(a)));
+		System.out.print("Standard Deviation: " + Math.round(sd(a)));
 	}
 
 	public static int generateLength() {
