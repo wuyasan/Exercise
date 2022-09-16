@@ -18,6 +18,8 @@ public class Test {
 		Arrays.sort(a);
 		System.out.print("Sorted: ");
 		printArray(a);
+		
+		System.out.print("Variance: " + Math.round(sd(a)));
 	}
 
 	public static int generateLength() {
@@ -42,5 +44,23 @@ public class Test {
 			System.out.print(a[i] + " ");
 		
 		System.out.println();
+	}
+	
+	public static double sd(int[] a) {
+		double var;
+		double sd;
+		int sum = 0;
+		double sqd = 0;
+		
+		for(int i = 0; i < a.length; i++)
+			sum += a[i];
+		
+		double avg = (double)sum/a.length;
+		
+		for(int i = 0; i < a.length; i++) {
+			sqd += Math.pow((a[i]-avg), 2);
+		}
+		
+		return sd = Math.sqrt(sqd/a.length);
 	}
 }
